@@ -87,10 +87,10 @@
 
                         <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000"
                                 class="px-8 md:px-32 py-16 mt-32 flex flex-col items-center justify-center  w-full gap-4 ">
-                                <h1 class=" text-6xl font-bold text-black text-center lg:text-left heroTitle">Cooling
+                                <h1 class=" text-6xl font-bold text-black text-center  heroTitle">Cooling
                                         Solutions Engineered to Perfection.
                                 </h1>
-                                <p class=" text-gray-700 mt-4 text-center lg:text-left body">We specialize in robust,
+                                <p class=" text-black/60 mt-4 text-center  body">We specialize in robust,
                                         high-efficiency
                                         air
                                         oil coolers and
@@ -626,43 +626,7 @@
 
                 </div>
 
-                <form id="myForm">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required><br><br>
-                      
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br><br>
-                      
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                      
-                        <input type="submit" value="Submit">
-                      </form>
-
-                      <script>
-                        document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
-  
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-  
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "send_email.php", true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        alert("Email sent successfully!");
-        // Reset the form after successful submission
-        document.getElementById("myForm").reset();
-      }
-    };
-    xhr.send("name=" + encodeURIComponent(name) +
-             "&email=" + encodeURIComponent(email) +
-             "&message=" + encodeURIComponent(message));
-  });
-  
-                      </script>
+          
                       
 
 
