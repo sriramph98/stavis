@@ -1,6 +1,8 @@
 <html>
 
 <head>
+        <title>Stavis Fluid Systems </title>
+
         <script src="./script.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
                 rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/x-icon" href="/media/stavisLogo.ico">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -18,8 +21,7 @@
 <body>
 
         <!-- NavBar -->
-        <nav data-aos="fade-down" data-aos-once="true" data-aos-duration="1000"
-                class="bg-white/60 backdrop-blur-md  border-gray-200 fixed top-0 z-30 w-full">
+        <nav class="bg-white/60 backdrop-blur-md  border-gray-200 fixed top-0 z-30 w-full">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
                         <a href="#Home" class="flex md:w-fit items-center ">
@@ -79,18 +81,20 @@
 
 
 
-        <div class="flex flex-col  gap-16 md:gap-32">
+        <div class="flex flex-col gap-16 md:gap-48" style="overflow: hidden;">
                 <!-- Hero Section -->
 
-                <div id="Home" class="bg-fixed  flex flex-col h-screen  md:flex-row gap-2 md:gap-8"
+                <div id="Home" class="bg-fixed  flex flex-col h-5/6 md:flex-row gap-2 md:gap-8 skew-y-[-3deg]"
                         style="background-image: url(./media/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);background-size: cover;">
 
                         <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000"
-                                class="px-8 md:px-32 py-16 mt-32 flex flex-col items-center justify-center  w-full gap-4 ">
-                                <h1 class=" text-6xl font-bold text-black text-center  heroTitle">Cooling
+                                class="px-8 md:px-32 py-16 mt-32 flex flex-col  items-center justify-center  w-full gap-4 ">
+                                <h1 class="skew-y-3 text-6xl font-bold text-black text-center md:text-left  heroTitle">
+                                        Cooling
                                         Solutions Engineered to Perfection.
                                 </h1>
-                                <p class=" text-black/60 mt-4 text-center  body">We specialize in robust,
+                                <p class=" text-black/60 mt-4 text-center md:text-left  body skew-y-3">We specialize in
+                                        robust,
                                         high-efficiency
                                         air
                                         oil coolers and
@@ -106,9 +110,11 @@
                                                 a
                                                 Quote</button></a> -->
                         </div>
-                        <!--  <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000" class="flex w-full items-center  justify-center ">
-                                <img  class="" src="media/hero.png" alt="Hero Image" />
-                        </div> -->
+                        <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000"
+                                class="hidden lg:flex w-full items-end  justify-center relative ">
+                                <img class=" md:absolute  right-120 bottom-[-140] md:h-2/3  "
+                                        src="media/productImage.png" alt="Hero Image" />
+                        </div>
 
 
                 </div>
@@ -119,8 +125,8 @@
                         class=" flex flex-col px-8 md:px-32  gap-8" id="OurProducts">
 
                         <div>
-                                <h2 class=" title brandBlue text-center lg:text-left"> Our Products</h2>
-                                <p class=" bodyBold text-center lg:text-left  ">Discover our diverse range of
+                                <h2 class=" title2  text-center lg:text-left"> Our Products</h2>
+                                <p class=" body text-center lg:text-left  ">Discover our diverse range of
                                         high-quality products designed to meet
                                         your
                                         specific industrial
@@ -291,7 +297,7 @@
 
                                 <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
                                         <!-- Carousel wrapper -->
-                                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96 border solid ">
+                                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96 bg-gray-100 ">
                                                 <!-- Item 1 -->
                                                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                                         <img src="media/1.png"
@@ -350,8 +356,9 @@
                                 <!-- Left -->
 
                                 <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000"
-                                        class="Right flex flex-col gap-4 w-full items-left justify-center  ">
-                                        <h2 class="title brandRed text-center lg:text-left">
+                                        class=" flex flex-col gap-4 w-full">
+                                        <img class="w-full lg:w-fit h-12" src="./media/icons/gallery-line.svg">
+                                        <h2 class="title2  text-center lg:text-left">
                                                 Product Gallery
                                         </h2>
 
@@ -384,8 +391,11 @@
                                 <!-- Left -->
 
                                 <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000"
-                                        class="Left flex flex-col gap-4 w-full items-left justify-center">
-                                        <h2 class="title brandBlue text-center lg:text-left">
+                                        class=" flex flex-col gap-4 w-full    justify-center">
+
+                                        <img class="w-full lg:w-fit h-12" src="./media/icons/book-open-line.svg">
+
+                                        <h2 class="title2  text-center lg:text-left">
                                                 Product Catalog
                                         </h2>
 
@@ -455,12 +465,56 @@
 
                         </div>
                 </div>
+                <!-- Contact -->
+                <div class="flex flex-col px-8 md:px-32 pb-16 md:pb-32 text-center">
+                        <h2 class="title">Contact</h2>
+                        <h2 class="title2">Reach out to us</h2>
+                        <p class="body pb-16">
+                                We value your feedback, inquiries, and any other form of communication you wish to
+                                initiate with us. Whether you have a question, a suggestion, or simply want to say
+                                hello, we're here to listen and assist you in every way we can.
+                        </p>
+                        <div class="flex flex-col lg:flex-row gap-8  justify-between ">
+                                <div class="bg-gray-100 rounded-3xl p-16">
+                                        <h3 class="subtitle2">Phone</h3>
+                                        <p>+919600155610</p>
+                                        <p>+919585587000</p>
 
+                                        <!-- <img class="h-16 w-full  -bottom-1/4" src="./media/contact/phone.png"> -->
 
+                                </div>
+                                <div class="bg-gray-100 rounded-3xl p-16">
+                                        <h3 class="subtitle2">Email Address</h3>
+                                        <p>sales@stavis-fs.com</p>
 
+                                        <!-- <img class="h-16 w-full  -bottom-1/4" src="./media/contact/phone.png"> -->
+
+                                </div>
+                                <div class="bg-gray-100 rounded-3xl p-16">
+                                        <h3 class="subtitle2">Address</h3>
+                                        <p>Stavis Fluid Systems 119/2, Balaji Nagar, Devampalayam Village, Coimbatore –
+                                                641107 Tamilnadu, India</p>
+
+                                        <!-- <img class="h-16 w-full  -bottom-1/4" src="./media/contact/phone.png"> -->
+
+                                </div>
+                        </div>
+
+                </div>
+
+                <!--   <img class="w-full bg-cover" src="./media/footerGrad.png" alt="Footer Gradient"> -->
+
+                <!-- Rotating Gear -->
+
+                <img class="absolute md:top-[175em]  lg:top-[125em] md:right-[-4em] lg:right-[-6em]  md:h-1/6 lg:h-1/4 overflow-hidden" id="rotateAnimation" style="transition: ease-in-out;
+                " src="./media/icons8-gear.svg" alt="Gear">
+
+        </div>
+
+        <div>
                 <!-- Footer -->
 
-                <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" class="footerBG" id="Contact">
+                <div class="footerBG" id="Contact">
 
                         <hr class="">
 
@@ -481,7 +535,7 @@
                                                         <div class="">
                                                                 <div class="flex gap-2 items-center ">
                                                                         <!--     <img class="h-7 " src="./media/icons/phone.png"
-                                                                                alt=""> -->
+                                                                alt=""> -->
                                                                         <p class="subtitle2 py-2">Phone</p>
                                                                 </div>
 
@@ -491,7 +545,7 @@
                                                         <div>
                                                                 <div class="flex gap-2 items-center ">
                                                                         <!-- <img class="h-7" src="./media/icons/mail.png"
-                                                                                alt=""> -->
+                                                                alt=""> -->
                                                                         <p class="subtitle2 py-2">Email</p>
                                                                 </div>
                                                                 <a href="mailto:sales@stavis-fs.com">
@@ -502,7 +556,7 @@
                                                         <div>
                                                                 <div class="flex gap-2 items-center ">
                                                                         <!--    <img class="h-7" src="./media/icons/address.png"
-                                                                                alt=""> -->
+                                                                alt=""> -->
                                                                         <p class="subtitle2 py-2">Address</p>
                                                                 </div>
                                                                 <div>
@@ -626,17 +680,21 @@
 
                 </div>
 
-          
-                      
+       
+           </div>
 
 
 
-                </script>
-                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-                <script>
-                        AOS.init();
-                </script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+
+
+
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+                AOS.init();
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
 </body>
 

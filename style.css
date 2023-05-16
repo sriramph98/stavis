@@ -5,6 +5,8 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
   }
 
 
@@ -47,15 +49,15 @@
   }
 
   .title{
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
     color: rgba(0,0,0,0.6);
   }
 
   .title2{
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
-    color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0,1);
   }
 
   
@@ -167,5 +169,7 @@
       overflow-y: auto;
     }
   }
+
+  
 
 
