@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
         <!-- NavBar -->
         <nav class="bg-white/60 backdrop-blur-md  border-gray-200 fixed top-0 z-30 w-full">
@@ -81,7 +81,7 @@
 
 
 
-        <div class="flex flex-col gap-16 md:gap-48" style="overflow: hidden;">
+        <div class="flex flex-col gap-16 md:gap-48 overflow-hidden">
                 <!-- Hero Section -->
 
                 <div id="Home" class="bg-fixed  flex flex-col h-5/6 md:flex-row gap-2 md:gap-8 skew-y-[-3deg]"
@@ -135,7 +135,7 @@
                         </div>
 
 
-                        <div class=" relative overflow-x-auto ">
+                        <div class=" relative ">
                                 <table class=" w-full text-sm text-left text-gray-500 ">
                                         <tbody>
                                                 <tr class="border-collapse border border-gray-200 ">
@@ -475,25 +475,28 @@
                                 hello, we're here to listen and assist you in every way we can.
                         </p>
                         <div class="flex flex-col lg:flex-row gap-8 w-full text-center   justify-between ">
-                                <div class="bg-gray-100 rounded-3xl w-full p-16">
+                                <div class="flex flex-col gap-4 bg-gray-100 rounded-3xl w-full p-16 ">
                                         <h3 class="subtitle2">Phone</h3>
-                                        <p>+919600155610</p>
-                                        <p>+919585587000</p>
-
+                                        <div>
+                                                <p class="subtitle3">+919600155610</p>
+                                                <p class="subtitle3">+919585587000</p>
+        
+                                        </div>
+                                   
                                         <!-- <img class="h-16  " src="./media/contact/phone.png"> -->
 
                                 </div>
-                                <div class="bg-gray-100 rounded-3xl w-full p-16">
+                                <div class="flex flex-col gap-4 bg-gray-100 rounded-3xl w-full p-16">
                                         <h3 class="subtitle2">Address</h3>
-                                        <p>Stavis Fluid Systems 119/2, Balaji Nagar, Devampalayam Village, Coimbatore –
+                                        <p class="subtitle3">Stavis Fluid Systems 119/2, Balaji Nagar, Devampalayam Village, Coimbatore –
                                                 641107 Tamilnadu, India</p>
 
                                          <!-- <img class="h-16   " src="./media/contact/phone.png">  -->
 
                                 </div>
-                                <div class="bg-gray-100 rounded-3xl w-full p-16">
+                                <div class="flex flex-col gap-4 bg-gray-100 rounded-3xl w-full p-16">
                                         <h3 class="subtitle2">Email Address</h3>
-                                        <p>sales@stavis-fs.com</p>
+                                        <p class="subtitle3">sales@stavis-fs.com</p>
 
                                         <!-- <img class="h-16" src="./media/contact/phone.png"> -->
 
@@ -507,11 +510,11 @@
 
                 <!-- Rotating Gear -->
 
-                <img class=" md:absolute  md:top-[175em]  lg:top-[125em] md:right-[-4em] lg:right-[-6em]  md:h-1/6 lg:h-48 overflow-hidden" id="rotateAnimation1" style="transition: ease-in-out;
+                <img class="md:absolute  md:top-[175em]  lg:top-[125em] md:right-[-4em] lg:right-[-6em]  md:h-1/6 lg:h-48 " id="rotateAnimation1" style="transition: ease-in-out;
                 " src="./media/icons8-gear.svg" alt="Gear">
 
-                <img class=" md:absolute md:top-[220em]  lg:top-[170em] md:left-[-4em] lg:left-[-4em]  md:h-32  overflow-hidden" id="rotateAnimation2" style="transition: ease-in-out;
-                " src="./media/icons8-gear.svg" alt="Fan">
+                <img class="  md:absolute md:top-[220em]  lg:top-[170em] md:left-[-4em] lg:left-[-4em]  md:h-32 " id="rotateAnimation2" style="transition: ease-in-out;
+                " src="./media/icons8-gear.svg" alt="Gear">
 
 
 

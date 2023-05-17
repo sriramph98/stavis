@@ -66,10 +66,16 @@
     font-size: 24px;
     color: rgba(0,0,0);
   }
+
   .subtitle2{
     font-weight: 500;
     font-size: 20px;
     color: rgba(0,0,0);
+  }
+
+  .subtitle3{
+    font-size: 17px;
+    color: rgba(0,0,0,0.48);
   }
 
   .getQuoteCursor{
