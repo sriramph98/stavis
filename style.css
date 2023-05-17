@@ -40,11 +40,11 @@
   }
 
   .caption1{
-    font-size: 18px;
+    font-size: 13px;
     color: rgba(0,0,0,0.6);
   }
   .caption2{
-    font-size: 15px;
+    font-size: 17px;
     color: rgba(0,0,0);
   }
 
@@ -243,6 +243,7 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
 
 
 
