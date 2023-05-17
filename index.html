@@ -66,7 +66,7 @@
                                         </li>
                                 </ul>
                         </div>
-                    <!--     <div class="hidden md:block">
+                        <!--     <div class="hidden md:block">
                                 <a href="mailto:sales@stavis-fs.com?subject=Quote Enquiry&body=This is only a test!">
                                         <button class="bg-black py-2 px-4 rounded-full text-white  ">Get
                                                 a
@@ -81,7 +81,7 @@
 
 
 
-        <div class="flex flex-col gap-16 md:gap-48 overflow-hidden">
+        <div class="flex flex-col gap-24  lg:gap-48 overflow-hidden">
                 <!-- Hero Section -->
 
                 <div id="Home" class="bg-fixed  flex flex-col h-5/6 md:flex-row gap-2 md:gap-8 skew-y-[-3deg]"
@@ -295,7 +295,8 @@
 
 
 
-                                <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+                                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"
+                                        id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
                                         <!-- Carousel wrapper -->
                                         <div class="relative h-56 overflow-hidden rounded-lg md:h-96 bg-gray-100 ">
                                                 <!-- Item 1 -->
@@ -414,7 +415,8 @@
 
                                 <!-- Right -->
 
-                                <div class=" flex flex-col w-full gap-4">
+                                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"
+                                        class=" flex flex-col w-full gap-4">
 
                                         <a href="./media/downloads/SOC Series Catalog.pdf" target="_blank">
                                                 <div
@@ -467,41 +469,72 @@
                 </div>
                 <!-- Contact -->
                 <div class="flex flex-col px-8 md:px-32 pb-16 md:pb-32 text-center">
-                        <h2 class="title">Contact</h2>
-                        <h2 class="title2">Reach out to us</h2>
-                        <p class="body pb-16">
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="title">Contact</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="title2">Reach out to
+                                us</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="body pb-16">
                                 We value your feedback, inquiries, and any other form of communication you wish to
                                 initiate with us. Whether you have a question, a suggestion, or simply want to say
                                 hello, we're here to listen and assist you in every way we can.
                         </p>
-                        <div class="flex flex-col lg:flex-row gap-8 w-full text-center   justify-between ">
-                                <div class="flex flex-col gap-4 bg-gray-100 rounded-3xl w-full p-16 ">
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"
+                                class="flex flex-col lg:flex-row gap-8 w-full text-center   justify-between ">
+                                <div
+                                        class="flex flex-col h-fit  items-center gap-4 border solid border-black/14 bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl w-full p-8 lg:p-16  ">
+
+                                        <img class="h-16 w-fit " src="./media/contact/phone.png">
+
                                         <h3 class="subtitle2">Phone</h3>
                                         <div>
                                                 <p class="subtitle3">+919600155610</p>
                                                 <p class="subtitle3">+919585587000</p>
-        
+
                                         </div>
-                                   
-                                        <!-- <img class="h-16  " src="./media/contact/phone.png"> -->
+                                        <button>
+                                                <p
+                                                        class="px-4 py-2  rounded-full bg-white hover:shadow-md duration-400 ease-in-out">
+                                                        Call us now</p>
+
+                                        </button>
+
+
 
                                 </div>
-                                <div class="flex flex-col gap-4 bg-gray-100 rounded-3xl w-full p-16">
+                                <div class="flex flex-col items-center gap-4 border solid border-black/14 bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl w-full p-8 lg:p-16">
+
+                                        <img class="h-16 w-fit  " src="./media/contact/mail.png">
                                         <h3 class="subtitle2">Address</h3>
-                                        <p class="subtitle3">Stavis Fluid Systems 119/2, Balaji Nagar, Devampalayam Village, Coimbatore –
+                                        <p class="subtitle3">Stavis Fluid Systems 119/2, Balaji Nagar, Devampalayam
+                                                Village, Coimbatore –
                                                 641107 Tamilnadu, India</p>
 
-                                         <!-- <img class="h-16   " src="./media/contact/phone.png">  -->
+                                        <button>
+                                                <p
+                                                        class="px-4 py-2 rounded-full bg-white hover:shadow-md duration-400 ease-in-out">
+                                                        View on Map</p>
+
+                                        </button>
+
+
 
                                 </div>
-                                <div class="flex flex-col gap-4 bg-gray-100 rounded-3xl w-full p-16">
+                                <div
+                                        class=" h-fit flex flex-col items-center gap-4 border solid border-black/14 bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl w-full p-8 lg:p-16">
+
+                                        <img class="h-16 w-fit  " src="./media/contact/location.png">
+
                                         <h3 class="subtitle2">Email Address</h3>
-                                        <p class="subtitle3">sales@stavis-fs.com</p>
+                                        <p class="subtitle3">sales@stavis-fs.com</p><br>
+                                        <button>
+                                                <p
+                                                        class="px-4 py-2 rounded-full bg-white hover:shadow-md duration-400 ease-in-out">
+                                                        Contact Us</p>
 
-                                        <!-- <img class="h-16" src="./media/contact/phone.png"> -->
+                                        </button>
+
 
                                 </div>
-                          
+
                         </div>
 
                 </div>
@@ -510,10 +543,12 @@
 
                 <!-- Rotating Gear -->
 
-                <img class="md:absolute  md:top-[175em]  lg:top-[125em] md:right-[-4em] lg:right-[-6em]  md:h-1/6 lg:h-48 " id="rotateAnimation1" style="transition: ease-in-out;
+                <img class="md:absolute  md:top-[175em]  lg:top-[125em] md:right-[-4em] lg:right-[-6em]  md:h-1/6 lg:h-48 "
+                        id="rotateAnimation1" style="transition: ease-in-out;
                 " src="./media/icons8-gear.svg" alt="Gear">
 
-                <img class="  md:absolute md:top-[220em]  lg:top-[170em] md:left-[-4em] lg:left-[-4em]  md:h-32 " id="rotateAnimation2" style="transition: ease-in-out;
+                <img class="  md:absolute md:top-[220em]  lg:top-[170em] md:left-[-4em] lg:left-[-4em]  md:h-32 "
+                        id="rotateAnimation2" style="transition: ease-in-out;
                 " src="./media/icons8-gear.svg" alt="Gear">
 
 
@@ -686,35 +721,35 @@
 
                 </div>
 
-       
-           </div>
+
+        </div>
 
 
 
 
-          
-
-           <button class="open-button" onclick="openForm()">Get a Quote</button>
-
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Name" name="name" required>
-    
-    <label for="companyName"><b>Company Name</b></label>
-    <input type="text" placeholder="Company Name" name="companyName" required>
-
-    <label for="Email"><b>Email</b></label>
-    <input type="text" placeholder="Email" name="email" required>
-
-    <label for="contactNumber"><b>Contact Number</b></label>
-    <input type="text" placeholder="Contact Number" name="contactNumber" required>
 
 
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
+        <button class="open-button" onclick="openForm()">Get a Quote</button>
+
+        <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Name" name="name" required>
+
+                        <label for="companyName"><b>Company Name</b></label>
+                        <input type="text" placeholder="Company Name" name="companyName" required>
+
+                        <label for="Email"><b>Email</b></label>
+                        <input type="text" placeholder="Email" name="email" required>
+
+                        <label for="contactNumber"><b>Contact Number</b></label>
+                        <input type="text" placeholder="Contact Number" name="contactNumber" required>
+
+
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+        </div>
 
 
         </script>
