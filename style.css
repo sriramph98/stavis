@@ -189,6 +189,7 @@
   bottom: 2%;
   right: 2%;
   width: 120px;
+  transition: opacity 0.3s ease;
 }
 
 /* The popup form - hidden by default */
@@ -234,7 +235,7 @@
 .form-container .btn {
   background-color: #04AA6D;
   color: white;
-  padding: 16px 20px;
+  padding: 8px 16px;
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
