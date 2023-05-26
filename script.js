@@ -41,3 +41,40 @@ window.addEventListener('scroll', function() {
       div.style.opacity = '1';
     }
   });
+
+  //Get a Quote Form 
+
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    var name = document.getElementById('name').value;
+    var message = document.getElementById('message').value;
+  
+    var data = {
+      name: name,
+      message: message
+    };
+  
+    fetch('send_email.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      if (data.success) {
+        alert('Email sent successfully!');
+      } else {
+        alert('Email sending failed.');
+      }
+    })
+    .catch(function(error) {
+      console.error('Error:', error);
+    });
+  });
+  
+

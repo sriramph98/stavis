@@ -231,7 +231,7 @@
 
 }
 
-/* Set a style for the submit/login button */
+/* Set a style for the submit */
 .form-container .btn {
   background-color: #04AA6D;
   color: white;
@@ -248,6 +248,13 @@
   border-radius: 12px;
 
 }
+
+.form-container .submitBtn {
+  border-radius: 12px;
+
+}
+
+
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
