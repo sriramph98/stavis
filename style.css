@@ -60,6 +60,16 @@
     color: rgba(0,0,0,1);
   }
 
+  .title3{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(0,0,0,1);
+  }
+
+  .brandBlueBG{
+    background-color: #487A9C;
+  }
+
   
   .subtitle{
     font-weight: 700;
