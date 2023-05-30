@@ -2,6 +2,9 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Retrieve form data
   $name = $_POST['name'];
+  $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $company = $_POST['company'];
   $message = $_POST['message'];
 
   // Send email
@@ -9,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $subject = 'New email from form';
   $body = "Name: $name\n\nMessage: $message";
 
-  $headers = "From: sender@example.com"; // Replace with the sender's email address
+  $headers = "From: $email"; // Replace with the sender's email address
 
   if (mail($to, $subject, $body, $headers)) {
     $response = array('success' => true);

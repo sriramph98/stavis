@@ -48,11 +48,18 @@ window.addEventListener('scroll', function() {
     event.preventDefault();
   
     var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var company = document.getElementById('company').value;
     var message = document.getElementById('message').value;
   
     var data = {
       name: name,
-      message: message
+      email: email,
+      phone: phone,
+      company: company,
+      message: message,
+
     };
   
     fetch('send_email.php', {
