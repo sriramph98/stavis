@@ -474,9 +474,9 @@
                                 <!-- Left -->
 
                                 <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000"
-                                        class=" flex flex-col gap-4 w-full  justify-center">
+                                class=" flex flex-col gap-4 pb-16 md:pb-0 w-full justify-center">
 
-                                        <img class="block mx-auto lg:mx-0 w-fit h-14" src="./media/icons/catalog.png">
+                                        <img class="block mx-auto lg:mx-0 lg:w-fit h-14" src="./media/icons/catalog.png">
 
                                         <h2 class="title2  text-center lg:text-left">
                                                 Product Catalog
@@ -623,9 +623,9 @@
                         <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"
                                 class="flex flex-col lg:flex-row gap-8 w-full text-center   justify-between ">
                                 <div
-                                        class="flex flex-col h-fit  items-center gap-4 border solid border-black/14 bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl w-full p-8 lg:p-16  ">
+                                        class="flex flex-col h-fit w-full justify-center items-center gap-4 border solid border-black/14 bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl w-full p-8 lg:p-16  ">
 
-                                        <img class="h-16 w-fit " src="./media/contact/phone.png">
+                                        <img class="h-16  " src="./media/contact/phone.png">
 
                                         <h3 class="subtitle2">Phone</h3>
                                         <div>
@@ -650,7 +650,7 @@
                                 <div
                                         class="flex flex-col items-center gap-4 border solid border-black/14 bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl w-full p-8 lg:p-16">
 
-                                        <img class="h-16 w-fit  " src="./media/contact/mail.png">
+                                        <img class="h-16   " src="./media/contact/mail.png">
                                         <h3 class="subtitle2">Address</h3>
                                         <p class="subtitle3">66, Krishnammal St,<br> Kuppakonam Pudur, K K Pudur,
                                                 <br>Tamil Nadu 641038
@@ -672,7 +672,7 @@
                                 <div
                                         class=" h-fit flex flex-col items-center gap-4 border solid border-black/14 bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl w-full p-8 lg:p-16">
 
-                                        <img class="h-16 w-fit  " src="./media/contact/location.png">
+                                        <img class="h-16   " src="./media/contact/location.png">
 
                                         <h3 class="subtitle2">Email Address</h3>
                                         <p class="subtitle3">sales@stavis-fs.com</p><br>
@@ -1012,7 +1012,7 @@
         <button class="open-button" id="getAQuote" onclick="openForm()">Get a Quote</button>
 
         <div class="form-popup" id="myForm">
-                <form class="form-container">
+                <form form class="form-container" onsubmit="sendEmail(event)">
 
                         <label for="name"><b>Name</b></label>
                         <input type="text" placeholder="Name" id="name" name="name" required>

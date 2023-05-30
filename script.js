@@ -44,44 +44,41 @@ window.addEventListener('scroll', function() {
 
   //Get a Quote Form 
 
-  document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-  
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var phone = document.getElementById('phone').value;
-    var company = document.getElementById('company').value;
-    var message = document.getElementById('message').value;
-  
-    var data = {
-      name: name,
-      email: email,
-      phone: phone,
-      company: company,
-      message: message,
+  function sendEmail(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
 
-    };
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var company = document.getElementById("company").value;
+    var message = document.getElementById("message").value;
+
+    // Send the data to the server using AJAX or fetch
+    var formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("company", company);
+    formData.append("message", message);
+
+    fetch("send_email.php", {
+        method: "POST",
+        body: formData
+    })
+        .then(response => response.text())
+        .then(result => {
+            console.log(result);
+            // Handle the response from the server (e.g., show success message)
+            closeForm(); // Close the form after successful submission
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            // Handle the error (e.g., show error message)
+        });
+}
   
-    fetch('send_email.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data) {
-      if (data.success) {
-        alert('Email sent successfully!');
-      } else {
-        alert('Email sending failed.');
-      }
-    })
-    .catch(function(error) {
-      console.error('Error:', error);
-    });
-  });
+//Remove 000Webhost watermark
+
+  document.querySelectorAll('a[href*="000webhost"]').forEach(e => e.remove());
   
 
