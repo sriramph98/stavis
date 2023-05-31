@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "sriramph9812@gmail.com";
     $subject = "New Quote Request";
     $body = "Name: $name\nEmail: $email\nPhone: $phone\nCompany: $company\nMessage: $message";
-    $headers = "From: customer@example.com";
+    $headers = "From: enquiry@stavis.com";
 
     if (mail($to, $subject, $body, $headers)) {
         echo "Email sent successfully.";

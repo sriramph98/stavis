@@ -80,5 +80,49 @@ window.addEventListener('scroll', function() {
 //Remove 000Webhost watermark
 
   document.querySelectorAll('a[href*="000webhost"]').forEach(e => e.remove());
+
+  //Toast 
+
+  document.getElementById('submitBttn').addEventListener('click', function() {
+    var toast = document.getElementById('toast');
+    toast.classList.remove('hidden');
+    setTimeout(function() {
+      toast.classList.add('hidden');
+    }, 6000);
+  });
+
+  // Get the form element and input fields
+const form = document.getElementById('myForm');
+const fields = form.querySelectorAll('input[required]');
+
+// Function to check if all required fields are filled
+function checkFormValidity() {
+  let allFieldsFilled = true;
+  
+
+
+  // Loop through each input field
+  fields.forEach((field) => {
+    if (field.value === '') {
+      allFieldsFilled = false;
+    }
+    else{
+      allFieldsFilled = true;
+
+    }
+  });
+
+  // Enable or disable the submit button based on the check
+  const submitButton = document.getElementById('submitBttn');
+  submitButton.disabled = !allFieldsFilled;
+}
+
+// Add event listeners to input fields
+fields.forEach((field) => {
+  field.addEventListener('input', checkFormValidity);
+});
+
+// Initial check when the page loads
+checkFormValidity();
   
 
