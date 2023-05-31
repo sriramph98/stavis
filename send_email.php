@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $company = $_POST['company'];
     $message = $_POST['message'];
     
-    $to = "sriramph9812@gmail.com";
+    $to = "stavisindia@gmail.com";
     $subject = "New Quote Request";
     $body = "Name: $name\nEmail: $email\nPhone: $phone\nCompany: $company\nMessage: $message";
     $headers = "From: enquiry@stavis.com";
