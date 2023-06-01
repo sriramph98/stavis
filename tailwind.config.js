@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./**/*{html,js,css}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:
+      {
+        'brandBlue': '#243c5a',
+      },
+    },
   },
   plugins: [
     require('tailwindcss'),
@@ -10,3 +15,5 @@ module.exports = {
   ]
 }
 
+
+  

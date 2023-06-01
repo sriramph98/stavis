@@ -1368,13 +1368,13 @@ body {
 }
 
 .open-button {
-  background-color: #000;
-  color: white;
+  background: linear-gradient(white, white) padding-box, linear-gradient(115deg, #7547B2 3.27%, #EB3757 48.88%, #ED592A 97.44%) border-box;
+  border: 2px solid transparent;
+  background-color: #FFF;
+  color: black;
   padding: 8px 12px;
   border-radius: 24px;
-  border: none;
   cursor: pointer;
-  opacity: 0.8;
   position: fixed;
   bottom: 2%;
   right: 2%;

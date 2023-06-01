@@ -275,6 +275,17 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
 
 
 
+.join_btn {
+  background: linear-gradient(white, white) padding-box, linear-gradient(115deg, #7547B2 3.27%, #EB3757 48.88%, #ED592A 97.44%) border-box;
+  border: 2px solid transparent;
+}
+
+.contactContainer {
+  background: linear-gradient(white, white) padding-box, linear-gradient(115deg, #7547B2 3.27%, #EB3757 48.88%, #ED592A 97.44%) border-box;
+  border: 2px solid transparent;
+}
+
+
 
 
 
